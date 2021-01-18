@@ -1,143 +1,151 @@
 <!-- see also https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started -->
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 
-<!-- everything that isn't content -->
+    <!-- everything that isn't content -->
+    <head>
+        <meta charset="utf-8">
+        <title>Acropora</title>
 
-<head>
-    <meta charset="utf-8">
-    <title>Acropora</title>
-
-    <!-- css -->
-    <style>
-        /* uncomment to change default font */
-        /* html {
+        <!-- css -->
+        <style>
+            /* uncomment to change default font */
+            /* html {
                 font-family: sans-serif;
             } */
 
-        img {
-            width: 1020px;
-            /* set image width */
-        }
+            img {
+                width: 1020px; /* set image width */
+            }
 
-        .caption {
-            display: none;
-            /* start with caption hidden */
-            font-style: italic;
-
-        }
-
-        /*When i try to assign certain style to the title it doesn't show on the page*/
-        /* #title {
+            #caption {
                 display: none; /* start with caption hidden */
-        /*font-style: italic;
+                font-style: italic;
+                
+            }
+            /*When i try to assign certain style to the title it doesn't show on the page*/
+           /* #title {
+                display: none; /* start with caption hidden */
+                /*font-style: italic;
                 
             } */
 
-        .container {
-            width: 1020px; /* same size as your images */
-            position: relative;
-            display : inline-block;
-                
-        }
 
-        /* we only want to add the style to p elements inside our containers */
-        .container p {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    </style>
-</head>
+            
+        </style>
+    </head>
 
-<!-- content -->
+    <!-- content -->
+    <body>
+        <!-- some text and links -->
+        <p id="title">
+            ACROPORA – COMPLEX FORMING RESEARCH PROJECT
+        </p>
+        <p id="title">
+            <a href="http://www.iaacblog.com/programs/acropora-complex-forming/">visit IAAC blog</a>
+        </p>
 
-<body>
-    <!-- some text and links -->
-    <!-- Check our h1, h2, h3, etc for some automatic styles, h1 being the biggest-->
-    <h1 id="title">
-        ACROPORA – COMPLEX FORMING RESEARCH PROJECT
-    </h1>
-    <p id="title">
-        <a href="http://www.iaacblog.com/programs/acropora-complex-forming/">visit IAAC blog</a>
-    </p>
-
-    <div class="container">
+        <div>
         <!-- an image -->
-        <img class="resImage"
-            src="https://lh6.googleusercontent.com/6_OSI1_ULR1dKEkA5me6Q_t3sETRTZtosFxK2L5xX2nLmIXLvMbBrnaEuNki6BoriIbHe_ENOeoS0rmeQy8GCPK8nnczhSPIGczT0VAsIPtTUbTjCwBpcljn1Oe2kXvnhNtUoOloKBc">
+        <img id="Image04"
+        src="http://www.iaacblog.com/wp-content/uploads/2020/12/06-2.png">
+
+   <!-- a caption -->
+   <p id="caption04">
+       As part of the design explorations using differential growth, this project establishes a new computation design process based on the following parameters:
+       Radius: Define circle size and the starting point of growth
+       Length: Remeshing – Define faces edge length
+       Noise: Field manipulation using Perlin noise
+       Vector: Extracting face normals
+       Attractor: Define attractor location and its power and range
+       Distance between faces: Define transfer distance between different faces
+   </p>
+
+</div>
+
+        <img id="Image01"
+             src="https://lh6.googleusercontent.com/6_OSI1_ULR1dKEkA5me6Q_t3sETRTZtosFxK2L5xX2nLmIXLvMbBrnaEuNki6BoriIbHe_ENOeoS0rmeQy8GCPK8nnczhSPIGczT0VAsIPtTUbTjCwBpcljn1Oe2kXvnhNtUoOloKBc">
 
         <!-- a caption -->
-        <p class="caption">
+        <p id="caption01">
             Defferential Growth simulation done using Houdini+Grasshopper3d
-            Differential growth in nature happens when one part of a cell’s growth occurs at a different rate from that
-            other part.
-            Compared with a uniform growth of the sphere, a shape with differential growth can offer more structural
-            rigidity to withstand local loads.
-            Moreover, it allows for better surface area to volume ratio, which is constrained for spheres.
-            Growth in a specific direction in nature can respond to the environment including light, touch or contact
-            with a solid object, water concentrations or heat or temperature changes.
+            Differential growth in nature happens when one part of a cell’s growth occurs at a different rate from that other part. 
+            Compared with a uniform growth of the sphere, a shape with differential growth can offer more structural rigidity to withstand local loads. 
+            Moreover, it allows for better surface area to volume ratio, which is constrained for spheres. 
+            Growth in a specific direction in nature can respond to the environment including light, touch or contact with a solid object, water concentrations or heat or temperature changes.
         </p>
-    </div>
-
-    <div class="container">
-        <img class="resImage"
-            src="https://lh6.googleusercontent.com/xSxewbvWk7fhtoMrYvSkdWnIcc1ob4biySj7OX8FcUC9nS6Sq8GS5_e3E7shvW6kesGvYe0g6iqFEEplRT8Y7wtmZnJbdK5NcVNOHimnngbBKZeNCdIsCBN68wXAyOI9BLmGDgFq66M">
+        <img id="Image02"
+             src="https://lh6.googleusercontent.com/xSxewbvWk7fhtoMrYvSkdWnIcc1ob4biySj7OX8FcUC9nS6Sq8GS5_e3E7shvW6kesGvYe0g6iqFEEplRT8Y7wtmZnJbdK5NcVNOHimnngbBKZeNCdIsCBN68wXAyOI9BLmGDgFq66M">
 
         <!-- a caption -->
-        <p class="caption">
-            Acropora is a project of IAAC, Institute of Advanced Architecture of Catalonia developed at Master In
-            Advanced Computation For Architecture & Design in 2020
-            by:Students: Aleksandra Jastrzebska, Felipe Romero, Hesham Shawqy
-            Lead Faculty: Arthur Mamou-Mani Faculty Assistant: Krishna Bhat
+        <p id="caption02">
+            Acropora is a project of IAAC, Institute of Advanced Architecture of Catalonia developed at Master In Advanced Computation For Architecture & Design in 2020 
+            by:Students: Aleksandra Jastrzebska, Felipe Romero, Hesham Shawqy 
+            Lead Faculty:  Arthur Mamou-Mani Faculty Assistant: Krishna Bhat
         </p>
-    </div>
+        <img id="Image03"
+             src="http://www.iaacblog.com/wp-content/uploads/2020/12/06-2.png">
 
-    <div class="container">
-        <img class="resImage" src="http://www.iaacblog.com/wp-content/uploads/2020/12/06-2.png">
-
-        <!-- a caption -->
-        <p class="caption">
-            As part of the design explorations using differential growth, this project establishes a new computation
-            design process based on the following parameters:
-            Radius: Define circle size and the starting point of growth
-            Length: Remeshing – Define faces edge length
-            Noise: Field manipulation using Perlin noise
-            Vector: Extracting face normals
-            Attractor: Define attractor location and its power and range
-            Distance between faces: Define transfer distance between different faces
+                     <!-- a caption -->
+        <p id="caption03">
+            Acropora is a project of IAAC, Institute of Advanced Architecture of Catalonia developed at Master In Advanced Computation For Architecture & Design in 2020 
+            by:Students: Aleksandra Jastrzebska, Felipe Romero, Hesham Shawqy 
+            Lead Faculty:  Arthur Mamou-Mani Faculty Assistant: Krishna Bhat
         </p>
-    </div>
+  
 
-    <!-- javascript -->
-    <script type="application/javascript">
-        // to give a list of elements the same interactive behavior, we should use a class instead of an id
-        // I changed your images above to use a class called 'resImage'
-        const images = document.getElementsByClassName('resImage')
+        <!-- javascript -->
+        <script type="application/javascript">
+            // get reference to html elements - Can i add to the same function using format like the following (Image01,Image02)
+            const img = document.getElementById('Image01')
 
-        for (i = 0; i < images.length; i++) {
+            // listen to events related to the image
+            img.addEventListener('mouseover', mouseOver, false)
+            img.addEventListener('mouseout', mouseOut, false)
 
-            const img = images[i]
-            img.addEventListener('mouseover', function () {
+            // define what happens when there is a mouse over event
+            function mouseOver() {
+                document.getElementById('caption01').style.display = 'block';
+            }
 
-                // we have the image and the text in a <div> "container"
-                // we get the container of the image and select the p that contains the text
+            // define what happens when there is a mouse out event
+            function mouseOut() {
+                document.getElementById('caption01').style.display = 'none';
+            }
+            //const img = document.getElementById('Image02')
 
-                img.parentNode.querySelector('p').style.display = 'block'
-            }, false)
+            // listen to events related to the image
+            //img.addEventListener('mouseover', mouseOver, false)
+            //img.addEventListener('mouseout', mouseOut, false)
 
-            img.addEventListener('mouseout', function () {
+            // define what happens when there is a mouse over event
+            //function mouseOver() {
+            //    document.getElementById('caption02').style.display = 'block';
+           // }
 
-                img.parentNode.querySelector('p').style.display = 'none'
-                
-            }, false)
+            // define what happens when there is a mouse out event
+           // function mouseOut() {
+           //     document.getElementById('caption02').style.display = 'none';
+            //}
+        </script>
 
-        }
+         <!-- javascript -->
+         <script type="application/javascript">
+            const img = document.getElementById('Image02')
 
-    </script>
+            img.addEventListener('mouseover', mouseOver, false)
+            img.addEventListener('mouseout', mouseOut, false)
 
-    <!-- the end -->
-</body>
+            function mouseOver() {
+                document.getElementById('caption02').style.display = 'block';
+            }
 
+            function mouseOut() {
+                document.getElementById('caption02').style.display = 'none';
+            }
+        </script>
+
+        <!-- the end -->
+    </body>
 </html>
